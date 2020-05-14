@@ -1,5 +1,4 @@
 * linguist-vendored
 *.c linguist-vendored=false
-*.java linguist-vendored=false
 *.py linguist-vendored=false
 *.docx linguist-vendored=false
