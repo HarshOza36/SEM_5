@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!ELEMENT employeedetails (employee)>
+<!ELEMENT employee (empid,ename,sal,dob,doj,addr,deptname,desg)>
+<!ELEMENT empid (#PCDATA)>
+<!ELEMENT ename (#PCDATA)>
+<!ELEMENT sal (#PCDATA)>
+<!ELEMENT dob (#PCDATA)>
+<!ELEMENT doj (#PCDATA)>
+<!ELEMENT addr (#PCDATA)>
+<!ELEMENT deptname (#PCDATA)>
+<!ELEMENT desg (#PCDATA)>

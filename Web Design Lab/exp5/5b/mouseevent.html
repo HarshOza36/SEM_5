@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function imageOne()
+{
+  document.getElementById('theimage').src="ec.jpg"
+}
+ function imageTwo()
+{
+  document.getElementById('theimage').src="pa.png"
+}
+</script>
+</head>
+
+<body>
+<img id="theimage" onmousedown="imageOne()" onmouseup="imageTwo()" src="md.jpg">
+<p>Click to change image</p>
+</body>
+</html>

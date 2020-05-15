@@ -1,0 +1,52 @@
+<DOCTYPE html>
+<html>
+<head><title>Exp5a</title>
+<style>
+	h1{padding:0px;margin:0px;border:0px;}
+	.b{width: 320px;
+  	     padding: 10px;
+  	     border: 5px solid gray;
+  	     margin: 0;
+	  }
+	.button1 {background-color: white;color: black; border: 2px solid #4CAF50;padding: 10px 24px;}
+	.button1:hover {background-color: #4CAF50;color: white;} 
+</style>
+<script src='scripta.js' type="text/javascript"></script>
+</head>
+<body onload="document.registration.userid.focus();" bgcolor=#80ffff>
+<center><div class='b'>
+	<h1>Registration Form</h1><hr>
+	<font face="Algerian">
+	<form name='registration' onSubmit="return formValid();">
+		<label for="userid">UserID:</label><br>
+		<input type="text" name="userid"/><br>
+		<label for="pass">Password:</label><br>
+		<input type="password" name="pass"/><br>
+		<label for="name">Name:</label><br>
+		<input type="text" name="name"/><br>
+		<label for="add">Address:</label><br>
+		<input type="text" name="add"/><br><br>
+		<label for="country">Country:</label>
+		<select id="dll"> <option value="">SELECT</option>
+			<option value="india">India</option>
+  			<option value="usa">USA</option>
+  			<option value="uk">UK</option>
+  			<option value="aus">Australia</option>
+		</select><br><br>
+		<label for="zip">Zipcode:</label><br>
+		<input type="text" name="zip"/><br>
+		<label for="email">Email ID:</label><br>
+		<input type="text" name="email"/><br><br>
+		<label for="gender">Gender:</label>
+		<input type="radio" id="r1" name="g1" value="Male"/>Male
+		<input type="radio" id="r2" name="g1" value="Female"/>Female<br><br>
+		<label for="language">Language:</label>
+		<input type="checkbox" id="r3" name="g3" value="English"/>Englilsh
+		<input type="checkbox" id="r4" name="g3" value="Others"/>Others<br><br>
+		<label for="About">About:</label><br>
+		<textarea name="abt" rows="7"></textarea><br>
+		<center><button name="submit" class="button1" onclick="formValid();">Submit</button></center>
+	</form></font>
+</div></center>
+</body>
+</html>

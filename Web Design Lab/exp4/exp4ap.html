@@ -1,0 +1,135 @@
+<html>
+<head>
+	<title>JS PRACTICE</title>
+	<style>
+		div {
+  			width: 300px;
+  			border: 15px solid yellow;
+  			padding: 50px;
+  			margin: 20px;
+			margin-right: 50px;
+		}
+		button{
+			border:5px solid red;
+			color:red;
+			background-color:yellow;
+		}
+	</style>
+</head>
+<body bgcolor="#1ddb8f">
+	<center><font face="Algerian" color="white"><h1>PRACTICING JS</h1></font></center>
+	<hr>
+	<center>
+	<div>
+	<font face="Algerian" color="white">
+	<h2><center>ADDITION CALCULATOR</center></h2></font>
+	<center>
+	<font face="Algerian" color="yellow">
+	<form id="e">
+		ENTER 1st NUMBER:<br><input id="n1"><br>
+		ENTER 2nd NUMBER:<br><input id="n2"><br>
+		<br>
+		<button type="button" onclick="myCalc()">ADDITION</button>
+	</form></font></center>
+	<script>
+		function myCalc(){
+			var x,y;
+			x = document.getElementById("n1").value;
+			y = document.getElementById("n2").value;
+			var z = parseInt(x) + parseInt(y);
+			window.alert(z);
+			document.getElementById("pq").innerHTML=z;
+		}
+	</script>
+	<p id="pq"></p>
+	</div>
+	</center>
+	<br>
+	<br>
+
+	<div>
+	<font face="Algerian" color="white">
+	<h2><center>Greatest of Both</center></h2></font>
+	<center>
+	<font face="Algerian" color="yellow">
+	<form id="e1">
+		ENTER 1st NUMBER:<br><input id="n11"><br>
+		ENTER 2nd NUMBER:<br><input id="n22"><br>
+		<br>
+		<button type="button" onclick="bigNo()">CHECK</button>
+	</form></font></center>
+	<script>
+		function bigNo(){
+			var x1,y1;
+			x1 = document.getElementById("n11").value;
+			y1 = document.getElementById("n22").value;
+			if(parseInt(x1) > parseInt(y1)){
+				window.alert(parseInt(x1));
+			}
+			else{
+				window.alert(parseInt(y1));
+			}	
+		}
+	</script>
+	<p id="pq1"></p>
+	</div>
+	<br>
+	<br>
+	
+	<center>
+	<div>
+	<font face="Algerian" color="white">
+	<h2><center>Factorial Of a Number</center></h2></font>
+	<center>
+	<font face="Algerian" color="yellow">
+	<form id="e1">
+		ENTER A NUMBER:<br><input id="f"><br>
+		<br>
+		<button type="button" onclick="factNo()">FACTORIAL</button>
+	</form></font></center>
+	<script>
+		function factNo(){
+			var a,b,L;
+			a = document.getElementById("f").value;
+			b=parseInt(a);
+			L=1;
+			for(i=1;i<=b;i++){
+				L=L*i;
+			}
+			window.alert(L);	
+		}
+	</script>
+	<p id="pq1"></p>
+	</div>
+	</center>
+	<br>
+	<br>
+
+	<div>
+	<font face="Algerian" color="white">
+	<h2><center>Addition Between 2 Numbers</center></h2></font>
+	<center>
+	<font face="Algerian" color="yellow">
+	<form id="m">
+		ENTER 1st NUMBER:<br><input id="r"><br>
+		ENTER 2nd NUMBER:<br><input id="t"><br>
+		<br>
+		<button type="button" onclick="addNo()">CHECK</button>
+	</form></font></center>
+	<script>
+		function addNo(){
+			var a1,b1,i;
+			var L1=0;
+			a1 = Number(document.getElementById("r").value);
+			b1 = Number(document.getElementById("t").value);
+			for(i=a1+1;i<b1;i++){
+				L1=L1+i;
+			}
+			document.getElementById("pq13").value=L1;	
+		}
+	</script>
+	<font face="Algerian" color="yellow">
+	Result:<input id="pq13"></font>
+	</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+<body>
+<div id="urgent"><h1>Red Alert</h1>
+The web server is Apache Server!</div>
+<script>
+var e=document.getElementById("urgent");
+var colors=["white","yellow","orange","red"];
+var nextColor=0;
+setInterval("e.style.backgroundColor=colors[nextColor++%colors.length];",500);
+</script>
+</body>
+</html>

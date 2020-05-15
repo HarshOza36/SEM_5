@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE employeedetails SYSTEM "note.dtd">
+
+<?xml-stylesheet type="text/xsl" href="internal.xsl"?>
+
+<employeedetails>
+
+<employee>
+<empid>E1</empid>
+<ename>Parker</ename>
+<sal>10000</sal>
+<dob>10-09-19</dob>
+<doj>10-11-18</doj>
+<addr>32-A,Villa Redwood,Blue Road,Borivali East.</addr>
+<deptname>Accounts</deptname>
+<desg>Accounts Head</desg>
+</employee>
+
+<employee>
+<empid>E2</empid>
+<ename>Richard</ename>
+<sal>20000</sal>
+<dob>10-10-19</dob>
+<doj>10-09-18</doj>
+<addr>32,Redwood,Red Road,Borivali west.</addr>
+<deptname>Finance</deptname>
+<desg>Finance Head</desg>
+</employee>
+
+</employeedetails>
