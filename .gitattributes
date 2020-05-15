@@ -5,4 +5,6 @@
 *.js linguist-vendored=false
 *.c linguist-vendored=false
 *.java linguist-vendored=false
-*.docx linguist-vendored=false
+*.php linguist-vendored=false
+*.xml linguist-vendored=false
+
